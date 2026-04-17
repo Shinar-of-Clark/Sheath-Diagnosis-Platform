@@ -18,3 +18,9 @@ env/
 
 # 操作系统生成文件
 .DS_Store
+
+# Docker 相关文件 (如果不需要上传到仓库)
+Dockerfile
+
+# 发布构建文件存放目录
+release/

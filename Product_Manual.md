@@ -1,36 +1,36 @@
-# ⚡ Cable Sheath Circulation Deep Processing & AI Diagnosis Platform - Product Manual
+# ⚡ Cable Sheath Circulating Current Deep Processing & AI Diagnosis Platform - Product Manual
 
 ## 1. Product Overview
 
-**Cable Sheath Circulation Deep Processing & AI Diagnosis Platform** is a comprehensive intelligent software designed specifically for the condition monitoring and health assessment of high-voltage/extra-high-voltage (HV/EHV) cables.
+**The Cable Sheath Circulating Current Deep Processing & AI Diagnosis Platform** is a comprehensive intelligent software specifically designed for condition monitoring and health assessment of high-voltage/extra-high-voltage (HV/EHV) cables.
 
-> 🖼️ **[Image Placeholder 1: Global View of Platform Main Interface]**
-> <img src="relative_path_to_images/main_ui.png" width="800" style="border: 1px solid #ddd; border-radius: 8px;" />
-> *Image suggestion: Take a full-screen browser screenshot, including the parameter setting area at the top, the chart area with waveforms in the middle, and the indicator cards and diagnostic conclusion area at the bottom. A dark or tech-style browser background is preferred.*
+> 🖼️ **[ 1: Global View of Platform Main Interface]**
+> <div style="text-align: center;"><img src="assets/main_ui.png" width="800" style="border: 1px solid #ddd; border-radius: 8px;" /></div>
 
-In complex power site environments, cable sheath circulation signals are often mixed with a large amount of environmental interference, harmonics, and DC components. By introducing cutting-edge Digital Signal Processing (DSP) technology and establishing an AI expert diagnosis matrix, this platform can "extract the silk from the cocoon" out of chaotic original waveforms, accurately extract the core electrical features reflecting the true health status of the cable, and automatically output highly valuable fault diagnosis conclusions.
 
-This platform is not only a "digital microscope" for O&M personnel, but also a "virtual expert" for decision-making assistance.
+In complex power site environments, cable sheath circulating current signals are often mixed with a large amount of environmental interference, harmonics, and DC components. By introducing cutting-edge Digital Signal Processing (DSP) technology and establishing an AI expert diagnosis matrix, this platform can "extract the silk from the cocoon" from chaotic raw waveforms, accurately extract core electrical features reflecting the true health status of the cable, and automatically output highly valuable fault diagnosis conclusions.
+
+This platform serves not only as a "digital microscope" for O&M personnel but also as a "virtual expert" for decision-making assistance.
 
 ---
 
 ## 2. Core Functional Features
 
-### 1. 🎛️ Multi-dimensional Signal Deep Cleaning & Auto-Optimization
+### 1. 🎛️ Multi-dimensional Signal Deep Cleaning & Automatic Optimization
 
-> 🖼️ **[Image Placeholder 2: Waveform Comparison Before and After Filtering & Optimization Panel]**
-> <img src="relative_path_to_images/filter_ui.png" width="800" style="border: 1px solid #ddd; border-radius: 8px;" />
-> *Image suggestion: Stitch two parts together, the left or top part is the checked state of "Filter Combination (Auto-Optimization)"; the right or bottom part is the main waveform plot.*
+> 🖼️ **[ 2: Waveform Comparison Before and After Filtering & Optimization Panel]**
+> <img src="assets/filter_ui.png" width="800" style="border: 1px solid #ddd; border-radius: 8px;" />
+<div style="text-align: center;">*Image suggestion: Screenshot the "Data Quality Metrics" module on the platform interface, and the table for "Feature Spectrum Analysis".*</div>
 
-Addressing complex electromagnetic interference on site, the platform has built-in multiple professional-grade digital filters. The system can **automatically calculate and match the best filter combination** based on the uploaded waveform data, maximizing the restoration of the true sheath circulation signal and providing a pure data source for subsequent analysis.
+Addressing complex electromagnetic interference on site, the platform has built-in multiple professional-grade digital filters. The system can **automatically calculate and match the best filter combination** based on the uploaded waveform data, maximizing the restoration of the true sheath circulating current signal and providing a pure data source for subsequent analysis.
 
-### 2. 📊 High-dimensional Electrical Feature Intelligent Extraction
+### 2. 📊 High-Dimensional Electrical Feature Intelligent Extraction
 
 > 🖼️ **[Image Placeholder 3: Metric Cards & Harmonic Analysis Table]**
-> <img src="relative_path_to_images/metrics_ui.png" width="800" style="border: 1px solid #ddd; border-radius: 8px;" />
-> *Image suggestion: Screenshot the "Data Quality Metrics" module on the platform interface, and the table for "Feature Spectrum Analysis".*
+> <img src="assets/metrics_ui.png" width="800" style="border: 1px solid #ddd; border-radius: 8px;" />
+<div style="text-align: center;">*Image suggestion: Screenshot the "Data Quality Metrics" module on the platform interface, and the table for "Feature Spectrum Analysis".*</div>
 
-Going beyond traditional single current effective value (RMS) monitoring, the platform can comprehensively extract deep features:
+Beyond traditional single current effective value (RMS) monitoring, the platform can comprehensively extract deep features:
 *   **Interference Deviation Rate Assessment**: Quantify the pollution degree of site noise on the true signal.
 *   **DC Bias Analysis**: Accurately extract hidden minute DC components.
 *   **Panoramic Harmonic Analysis**: Automatically generate the "Golden Cycle" for high-precision FFT, accurately analyzing the amplitude, phase, Total Harmonic Distortion (THD), and Individual Harmonic Distortion (IHD) of the fundamental and each harmonic.
@@ -38,10 +38,10 @@ Going beyond traditional single current effective value (RMS) monitoring, the pl
 ### 3. 🧠 Heuristic AI Expert Diagnosis System
 
 > 🖼️ **[Image Placeholder 4: Expert Diagnosis Conclusion Output Area]**
-> <img src="relative_path_to_images/expert_ui.png" width="800" style="border: 1px solid #ddd; border-radius: 8px;" />
-> *Image suggestion: Screenshot the "AI Expert Diagnosis Conclusion" module at the bottom. Show a state where a specific fault is detected to reflect the final business value of the system.*
+> <img src="assets/expert_ui.png" width="800" style="border: 1px solid #ddd; border-radius: 8px;" />
+<div style="text-align: center;">*Image suggestion: Screenshot the "AI Expert Diagnosis Conclusion" module at the bottom. Show a state where a specific fault is detected to reflect the final business value of the system.*</div>
 
-The platform not only "discovers problems" but also "explains problems". With a built-in multi-dimensional expert diagnosis matrix, it can automatically diagnose up to 18 types of underlying software and hardware faults through the combination and judgment of "feature fingerprints", just like an experienced power expert.
+The platform not only "discovers problems" but also "explains problems." With a built-in multi-dimensional expert diagnosis matrix, it can automatically diagnose up to 18 types of underlying software and hardware faults through the combination and judgment of "feature fingerprints," just like an experienced power expert.
 The platform can accurately locate and prompt the following typical hidden dangers (including but not limited to):
 *   Cross-bonding box wiring anomaly / poor contact
 *   Sheath open circuit / sheath damage
@@ -51,16 +51,16 @@ The platform can accurately locate and prompt the following typical hidden dange
 ### 4. ⚙️ Dynamic Threshold & Multi-level Warning Engine
 
 > 🖼️ **[Image Placeholder 5: Advanced Threshold Configuration Panel]**
-> <img src="relative_path_to_images/threshold_ui.png" width="600" style="border: 1px solid #ddd; border-radius: 8px;" />
+> <div style="text-align: center;"><img src="assets/threshold_ui.png" width="600" style="border: 1px solid #ddd; border-radius: 8px;" /></div>
 
-Supports operators to "hot modify" various security thresholds on the front-end interface. The platform can respond in real time, score the health of each indicator, and trigger text alarms through eye-catching visual tags (Badges), realizing early discovery and early intervention of hidden dangers.
+It supports O&M personnel to "hot modify" various security thresholds on the front-end interface. The platform can respond in real-time, score the health of each indicator, and trigger text alarms through eye-catching visual tags (Badges), realizing early discovery and early intervention of hidden dangers.
 
 ### 5. 🛠️ Composite Fault Waveform Simulator (Sandbox Verification)
 
 > 🖼️ **[Image Placeholder 6: Waveform Simulator Configuration Area]**
-> <img src="relative_path_to_images/mock_ui.png" width="600" style="border: 1px solid #ddd; border-radius: 8px;" />
+> <div style="text-align: center;"><img src="assets/mock_ui.png" width="600" style="border: 1px solid #ddd; border-radius: 8px;" /></div>
 
-To facilitate scientific research training and algorithm verification, the platform has a built-in powerful "One-click Waveform Generator". Without real equipment, users can freely combine and set the fundamental current, DC bias, various proportions of high-order harmonics, and random Gaussian noise to instantly generate high-fidelity composite fault waveforms.
+To facilitate scientific research training and algorithm verification, the platform has a built-in powerful "One-click Waveform Generator." Without real equipment, users can freely combine and set the fundamental current, DC bias, various proportions of high-order harmonics, and random Gaussian noise to instantly generate high-fidelity composite fault waveforms.
 
 ---
 

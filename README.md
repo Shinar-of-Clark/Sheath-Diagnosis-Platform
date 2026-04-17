@@ -1,38 +1,45 @@
-# ⚡ Sheath-Diagnosis-Platform (护套环流深处理与 AI 诊断平台)
+# ⚡ Sheath Diagnosis Platform
 
-基于电磁感应原理与尖端物理现象的电缆护套环流高级分析与 AI 专家诊断系统。
-系统通过 Python & Dash 构建，支持从原始波形中提取核心特征（RMS、DC 偏置、各次谐波幅值与相位），并结合 AI 专家诊断矩阵自动判别 18 种底层故障。
+An advanced analysis and AI-driven expert diagnostic system for cable sheath circulating currents, based on electromagnetic induction principles and cutting-edge physical phenomena.
+Built with Python and Dash, the system extracts core features (RMS, DC bias, harmonic amplitudes and phases) from raw waveforms. Combined with an AI expert diagnostic matrix, it automatically identifies up to 18 types of underlying faults.
 
-## ✨ 核心特性 (Features)
+## ✨ Features
 
-- **🔌 多维信号处理**: 支持去除直流偏置、Butterworth 低通滤波、IIR 梳状滤波以及 EMA 指数滑动平均。
-- **📊 黄金周波合成**: 自动截取稳态数据，合成用于高精度傅里叶分析的黄金周波。
-- **🧠 AI 专家指纹诊断**: 内置诊断矩阵，精准识别护层断路、箱体进水、多点接地等故障。
-- **🛠️ 故障波形发生器**: 内置 `gen_diagnostic_data.py` 和网页端生成器，一键模拟各种复合干扰波形。
-- **🐳 容器化部署**: 提供完整的 `Dockerfile`，支持生产级一键部署。
+- **🔌 Multi-dimensional Signal Processing**: Supports DC bias removal, Butterworth low-pass filtering, IIR comb filtering, and Exponential Moving Average (EMA).
+- **📊 Golden Cycle Synthesis**: Automatically intercepts steady-state data to synthesize a "Golden Cycle" for high-precision Fourier analysis.
+- **🧠 AI Expert Fingerprint Diagnosis**: Features a built-in diagnostic matrix to accurately identify faults such as sheath open circuits, link box water ingress, and multi-point grounding.
+- **🛠️ Fault Waveform Generator**: Includes a built-in script (`gen_diagnostic_data.py`) and a web-based generator to simulate various complex interference waveforms with a single click.
+- **📦 Out-of-the-Box Deployment**: Provides a standalone executable file, allowing rapid deployment on a VPS without configuring a Python environment.
 
-## 🚀 快速启动 (Quick Start)
+## 🚀 Quick Start
 
-### 方式一：使用 Docker 运行 (推荐)
+### Run Standalone Executable on VPS (No Environment Configuration Required)
 
-确保你的机器上已安装 Docker。
+If you have obtained the packaged standalone executable, you can run it directly on your VPS server **without installing Python or any dependencies**:
 
 ```bash
-# 构建镜像 (使用 --progress=plain 可实时查看底层 C/C++ 依赖包的编译进度，避免假死假象)
+# 1. Upload the standalone executable (e.g., diagnosis_app) to your VPS server
+
+# 2. Grant execution permissions (Linux environment)
+chmod +x diagnosis_app
+
+# 3. Start in foreground for testing (defaults to port 8051)
+./diagnosis_app
+
+# 4. Run as a background daemon for production (recommended, keeps running after SSH disconnect)
+nohup ./diagnosis_app > runtime.log 2>&1 &
+```
+from website : `http://<your IP>:8051`
+
+
+
+### Option 2: Run with Docker
+
+Ensure that Docker is installed on your machine.
+
+```bash
+# Build the image (use --progress=plain to monitor the compilation of underlying C/C++ dependencies in real-time, avoiding false freezing illusions)
 docker build --progress=plain -t sheath-diagnosis-app .
 
-# 运行容器 (映射到主机的 8051 端口)
+# Run the container (mapping to host port 8051)
 docker run -d -p 8051:8000 sheath-diagnosis-app
-```
-访问浏览器: `http://localhost:8051`
-
-### 方式二：本地 Python 环境运行
-
-```bash
-# 安装依赖
-pip install -r requirements.txt
-
-# 启动服务
-python diagnosis.py
-```
-访问浏览器: `http://localhost:8051`
